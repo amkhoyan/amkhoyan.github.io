@@ -11,15 +11,86 @@
 <body style="background-color:E9B629;">
 
 <div class="container">
-  <h1>for loop</h1>
+  <h2>Console-ի մեջ նկարել ուղղանկյուն</h2>
 
+    <pre>
+      int widthRect = 4;
 
-
-    <pre>for(int i=0, i<10, i==)
+      for (int i = 0; i < widthRect; i++)
       {
-        Console.WriteLine("*");
-      }
+          for (int y = 0; y < widthRect; y++)
+          {
+              if (i == 0 || i == widthRect - 1|| y == 0 || y == widthRect - 1)
+              {
+                  Console.Write("*");
+              }
+              else
+              {
+                  Console.Write(" ");
+              }
+          }
+        }
+          Console.WriteLine();
   </pre>
+
+  <h2>Console-ի մեջ նկարել շեղանկյուն</h2>
+
+  <pre>
+     int widthRhomb = 5;
+
+for (int i = 1; i <= widthRhomb; i++)
+{
+  for (int j = 0; j < (widthRhomb - i); j++)
+      Console.Write(" ");
+  for (int j = 1; j <= i; j++)
+      Console.Write("*");
+  for (int k = 1; k < i; k++)
+      Console.Write("*");
+  Console.WriteLine();
+}
+
+for (int i = widthRhomb - 1; i >= 1; i--)
+{
+  for (int j = 0; j < (widthRhomb - i); j++)
+      Console.Write(" ");
+  for (int j = 1; j <= i; j++)
+      Console.Write("*");
+  for (int k = 1; k < i; k++)
+      Console.Write("*");
+  Console.WriteLine();
+}
+
+Console.WriteLine();
+</pre>
+
+<h2>Console-ի մեջ նկարել եռանկյուն - 1</h2>
+
+<pre>
+  for (int i = 1; i < 10; i++)
+ {
+     for (int j = 0; j < i; j++)
+     {
+         Console.Write("*");
+     }
+     Console.WriteLine();
+ }
+</pre>
+
+
+<h2>Console-ի մեջ նկարել եռանկյուն - 2</h2>
+
+<pre>
+  int widthRhomb = 5;
+
+  for (int i = 1; i <= widthRhomb; i++)
+  {
+      for (int j = 0; j < (widthRhomb - i); j++)
+          Console.Write(" ");
+      for (int j = 1; j <= i; j++)
+          Console.Write("*");
+      Console.WriteLine();
+  }
+</pre>
 
 
 
