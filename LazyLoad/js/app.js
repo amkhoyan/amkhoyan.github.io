@@ -1,4 +1,4 @@
-angular.module('MainApp', ['treeControl', 'ui.bootstrap'])
+angular.module('tyru', ['treeControl', 'ui.bootstrap'])
 .controller('MainCtrl', ['$http', '$timeout', function ($http, $timeout) {
   var ctrl = this;
 
