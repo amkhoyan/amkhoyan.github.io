@@ -1,4 +1,4 @@
-angular.module('tyru', ['treeControl', 'ui.bootstrap'])
+angular.module('MainApp', ['treeControl', 'ui.bootstrap'])
 .controller('MainCtrl', ['$http', '$timeout', function ($http, $timeout) {
   var ctrl = this;
 
@@ -36,7 +36,7 @@ angular.module('tyru', ['treeControl', 'ui.bootstrap'])
 
   ctrl.resetTreeModel = function resetTreeModel() {
     // Fetch root child nodes.
-    $http.get('data/root.json')
+    $http.get('root.json')
       .success(function(data) {
         ctrl.treeModel = data;
       });
