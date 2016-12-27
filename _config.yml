@@ -28,7 +28,7 @@ opengraph:
 # Links to include in top navigation
 # For external links add external: true
 links:
-   title: About
+  - title: About
     url: /about
   - title: Github
     url: https://github.com/ColeTownsend/Balzac-for-Jekyll
