@@ -1,0 +1,40 @@
+<<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Title</title>
+    </head>
+
+    <body ng-app="ViewExample">
+
+        <p>See info about <a href="#dog">Dogs</a>
+        <a href="#cat">Cats</a></p>
+
+<div ng-view> </div>
+
+
+        <script src="angular.js"></script>
+        <script src="angular-route.js"></script>
+        <script>
+            angular.module("ViewExample", ["ngRoute"])
+                .config(['$routeProvider',function($routeProvider) {
+                    $routeProvider
+                        .when("/dog", {
+                            templateUrl: "dog.html"
+                        })
+                        .when("/cat",{
+                            templateUrl: "cat.html"
+                        })
+                        .otherwise({
+                          redirectTo:"/dog"
+                        })
+                        ;
+
+                }]);
+        </script>
+    </body>
+
+    </html>
