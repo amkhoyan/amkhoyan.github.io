@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Սուպեռ֊պուպեռ վեբ ափ</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
@@ -18,12 +18,16 @@
 
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <p>test</p>
+
         <div>
-  <label>Name:</label>
-  <input type="text" ng-model="yourName" placeholder="Enter a name here">
+
+  <label>ներմուծել։ </label>
+  <input type="text" ng-model="inputText" placeholder="Enter a name here">
   <hr>
-  <h1>Hello {{yourName}}!</h1>
+  <p>արտածել որպես մեծատառ {{inputText | uppercase}}</p>
+  <p>արտածել որպես փոքրատառ {{inputText | lowercase}}</p>
+  <p>արտածել որպես դրամ {{inputText | currency}}</p>
+
 </div>
 
 
