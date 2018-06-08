@@ -21,9 +21,6 @@
       <div class="col-md-6 col-md-offset-3">
 <h1>Թույն ծրագիր թույն ուսանողների համար</h1><br><br>
         <div>
-
-
-            <p>test text</p>
   <span>ներմուծել։ </span>
   <input type="text" ng-model="inputText" placeholder="մի բան գրի ստեղ">
   <hr>
@@ -47,6 +44,27 @@
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="app.js"></script>
+    <script>
+    var app = angular.module("MyApp", []);
+
+app.filter("reverse", function() {
+  return function(input) {
+    var result = "";
+    input = input || "";
+    for (var i=0; i<input.length; i++) {
+      result = input.charAt(i) + result;
+    }
+    return result;
+  };
+});
+
+app.filter('capitalize', function() {
+    return function(input) {
+      return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
+    }
+});
+as
+    </script>
 
   </body>
 </html>
