@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.min.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/css/zenburn.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ?
+            'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/pdf.min.css' :
+            'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/paper.min.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>operators</h2>
+            </section>
+
+            <section>
+                <section>
+                    <h2>arithmetic</h2>
+                </section>
+
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Operator</th>
+                                <th scope="col">Operator Name</th>
+                                <th scope="col">Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>+</td>
+                                <td>Addition Operator</td>
+                                <td>6 + 3 evaluates to 9</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Subtraction Operator</td>
+                                <td>10 - 6 evaluates to 4</td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Multiplication Operator</td>
+                                <td>4 * 2 evaluates to 8</td>
+                            </tr>
+                            <tr>
+                                <td>/</td>
+                                <td>Division Operator</td>
+                                <td>10 / 5 evaluates to 2</td>
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Modulo Operator (Remainder)</td>
+                                <td>16 % 3 evaluates to 1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>relational</h2>
+                </section>
+
+                <section>
+                    <table summary="C# Relational Operators">
+                        <thead>
+                            <tr>
+                                <th scope="col">Operator</th>
+                                <th scope="col">Operator Name</th>
+                                <th scope="col">Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>==</td>
+                                <td>Equal to</td>
+                                <td>6 == 4 evaluates to false</td>
+                            </tr>
+                            <tr>
+                                <td>&gt;</td>
+                                <td>Greater than</td>
+                                <td>3 &gt; -1 evaluates to true</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;</td>
+                                <td>Less than</td>
+                                <td>5 &lt; 3 evaluates to false</td>
+                            </tr>
+                            <tr>
+                                <td>&gt;=</td>
+                                <td>Greater than or equal to</td>
+                                <td>4 &gt;= 4 evaluates to true</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;=</td>
+                                <td>Less than or equal to</td>
+                                <td>5 &lt;= 3 evaluates to false</td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Not equal to</td>
+                                <td>10 != 2 evaluates to true</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>logical</h2>
+                </section>
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operand 1</th>
+                                <th>Operand 2</th>
+                                <th>OR (||)</th>
+                                <th>AND (&amp;&amp;)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>true</td>
+                                <td>true</td>
+                                <td>true</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>true</td>
+                                <td>false</td>
+                                <td>true</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td>false</td>
+                                <td>true</td>
+                                <td>true</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td>false</td>
+                                <td>false</td>
+                                <td>false</td>
+                                <td>false</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>unary</h2>
+                </section>
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Operator Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>+</td>
+                                <td>Unary Plus</td>
+                                <td>Leaves the sign of operand as it is</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Unary Minus</td>
+                                <td>Inverts the sign of operand</td>
+                            </tr>
+                            <tr>
+                                <td>++</td>
+                                <td>Increment</td>
+                                <td>Increment value by 1</td>
+                            </tr>
+                            <tr>
+                                <td>--</td>
+                                <td>Decrement</td>
+                                <td>Decrement value by 1</td>
+                            </tr>
+                            <tr>
+                                <td>!</td>
+                                <td>Logical Negation (Not)</td>
+                                <td>Inverts the value of a boolean</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Ternary</h2>
+                </section>
+                <section>
+					<pre><code class="hljs" data-trim contenteditable>
+                        using System;
+ 
+                        namespace Operator
+                        {
+                            class TernaryOperator
+                            {
+                                public static void Main(string[] args)
+                                {
+                                    int number = 10;
+                                    string result;
+                        
+                                    result = (number % 2 == 0)? "Զույգ թիվ" : "Կենտ թիվ";
+                                    Console.WriteLine("{0} is {1}", number, result);
+                                }
+                            }
+                        }
+                            </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Bitwise and Bit Shift</h2>
+                </section>
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Operator Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&amp;</td>
+                                <td>Bitwise AND</td>
+                            </tr>
+                            <tr>
+                                <td>|</td>
+                                <td>Bitwise OR</td>
+                            </tr>
+                            <tr>
+                                <td>^</td>
+                                <td>Bitwise Exclusive OR</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;&lt;</td>
+                                <td>Bitwise Left Shift</td>
+                            </tr>
+                            <tr>
+                                <td>&gt;&gt;</td>
+                                <td>Bitwise Right Shift</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Compound Assignment Operators</h2>
+                </section>
+                <section>
+                    <table summary="C# Compound Assignment Operators">
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Operator Name</th>
+                                <th>Example</th>
+                                <th>Equivalent To</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>+=</td>
+                                <td>Addition Assignment</td>
+                                <td><code>x += 5</code></td>
+                                <td><code>x = x + 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>-=</td>
+                                <td>Subtraction Assignment</td>
+                                <td><code>x -= 5</code></td>
+                                <td><code>x = x - 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>*=</td>
+                                <td>Multiplication Assignment</td>
+                                <td><code>x *= 5</code></td>
+                                <td><code>x = x * 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>/=</td>
+                                <td>Division Assignment</td>
+                                <td><code>x /= 5</code></td>
+                                <td><code>x = x / 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>%=</td>
+                                <td>Modulo Assignment</td>
+                                <td><code>x %= 5</code></td>
+                                <td><code>x = x % 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>&amp;=</td>
+                                <td>Bitwise AND Assignment</td>
+                                <td><code>x &amp;= 5</code></td>
+                                <td><code>x = x &amp; 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>|=</td>
+                                <td>Bitwise OR Assignment</td>
+                                <td><code>x |= 5</code></td>
+                                <td><code>x = x | 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>^=</td>
+                                <td>Bitwise XOR Assignment</td>
+                                <td><code>x ^= 5</code></td>
+                                <td><code>x = x ^ 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;&lt;=</td>
+                                <td>Left Shift Assignment</td>
+                                <td><code>x &lt;&lt;= 5</code></td>
+                                <td><code>x = x &lt;&lt; 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>&gt;&gt;=</td>
+                                <td>Right Shift Assignment</td>
+                                <td><code>x &gt;&gt;= 5</code></td>
+                                <td><code>x = x &gt;&gt; 5</code></td>
+                            </tr>
+                            <tr>
+                                <td>=&gt;</td>
+                                <td>Lambda Operator</td>
+                                <td><code>x =&gt; x*x</code></td>
+                                <td><code>Returns x*x</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js'
+                },
+                {
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js'
+                },
+                {
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.min.js',
+                    async: true
+                },
+                {
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.min.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ],
+            width: "100%",
+            height: "100%",
+
+        });
+    </script>
+</body>
+
+</html>
